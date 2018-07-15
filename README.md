@@ -1,18 +1,18 @@
 # indentation [![Build Status](https://travis-ci.org/trubitsyn/indentation.svg?branch=master)](https://travis-ci.org/trubitsyn/indentation)
 This program detects used indentation symbol and size in a given source code.
 
-# Running
+## Running
 `java -jar indentation.jar [FILENAME]`
 
-# Features
+## Features
 * Detects TAB and SPACE indents
 * Detects arbitrary indentation symbols (e.g. all indents replaced to `#`, or 8 spaces used instead of 4 - an edge case)
 * Detects mixed cases and outputs the most widely used indentation symbol and size
 
-# Sample output
+## Sample output
 Output format is `SYMBOL:SIZE`. For the sake of better user experience there are comments in output.
 
-## Tabs
+### Tabs
 ```java
 public static void main(String[] args) {
 	System.out.println("Hello, indent!")
@@ -26,7 +26,7 @@ Standard indent: TAB:1
 Arbitrary indent: TAB:1
 ```
 
-## Spaces
+### Spaces
 ```
 public static void main(String[] args) {
     System.out.println("Hello, indent!")
@@ -38,7 +38,7 @@ public static void main(String[] args) {
 Standard indent: SPACE:4
 Arbitrary indent: SPACE:8
 ```
-## Arbitrary symbols
+### Arbitrary symbols
 ```
 public static void main(String[] args) {
 if (setUp) return false;
@@ -52,7 +52,7 @@ Standard indent: null
 Arbitrary indent: _:4
 ```
 
-## Tabs and arbitrary symbols
+### Tabs and arbitrary symbols
 ```java
 ###
 ###
@@ -67,14 +67,14 @@ Standard indent: TAB:1
 Arbitrary indent: #:3
 ```
 
-# Building from source
+## Building from source
 The program is written in Kotlin and uses Gradle build system.
 Run `./gradlew jar` to get a fat JAR with all dependencies bundled.
 
-# Testing
+## Testing
 Run `./gradlew test` to run a test suite.
 
-# LICENSE
+## LICENSE
 
 ```
 Copyright 2018 Nikola Trubitsyn
