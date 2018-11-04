@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.github.trubitsyn.indentation
+package org.trubitsyn.indentation
 
 import java.io.File
 import kotlin.system.exitProcess

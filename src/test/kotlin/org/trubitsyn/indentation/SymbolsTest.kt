@@ -14,26 +14,20 @@
  * limitations under the License.
  */
 
-package io.github.trubitsyn.indentation
+package org.trubitsyn.indentation
 
-import org.junit.Assert.assertFalse
-import org.junit.Assert.assertTrue
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class LaunchTest {
+class SymbolsTest {
 
     @Test
-    fun noArgsProvided_invalid() {
-        assertFalse(argsValid(arrayOf()))
+    fun space() {
+        assertEquals(' ', SPACE)
     }
 
     @Test
-    fun oneArgProvided_valid() {
-        assertTrue(argsValid(arrayOf("1")))
-    }
-
-    @Test
-    fun twoArgsProvided_invalid() {
-        assertFalse(argsValid(arrayOf("1", "2")))
+    fun tab() {
+        assertEquals('\t', TAB)
     }
 }

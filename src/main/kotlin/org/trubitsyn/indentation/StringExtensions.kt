@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.github.trubitsyn.indentation
+package org.trubitsyn.indentation
 
 data class Indent(val symbol: Char, private val size: Int?) {
 

@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
-group 'io.github.trubitsyn'
+group 'org.trubitsyn.indentation'
 version '1.0.0'
 
 apply plugin: 'java'
@@ -35,7 +35,7 @@ compileTestKotlin {
 
 jar {
     manifest {
-        attributes("Main-Class": "io.github.trubitsyn.indentation.MainKt")
+        attributes("Main-Class": "org.trubitsyn.indentation.MainKt")
     }
 
     from {
